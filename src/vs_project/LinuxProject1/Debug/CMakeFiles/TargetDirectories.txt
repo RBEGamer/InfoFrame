@@ -1,3 +1,0 @@
-C:/Users/marcel/Desktop/LinuxProject1/LinuxProject1/Debug/CMakeFiles/LinuxProject1.dir
-C:/Users/marcel/Desktop/LinuxProject1/LinuxProject1/Debug/CMakeFiles/edit_cache.dir
-C:/Users/marcel/Desktop/LinuxProject1/LinuxProject1/Debug/CMakeFiles/rebuild_cache.dir

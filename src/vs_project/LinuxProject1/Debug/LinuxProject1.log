@@ -1,5 +1,0 @@
-﻿  VisualGDB: Run "cmd.exe /c "C:\SysGCC\raspberry\bin\make.exe"" in directory "C:\Users\marcel\Desktop\LinuxProject1\LinuxProject1/Debug" on local computer
-  Scanning dependencies of target LinuxProject1
-  [ 25%] Building CXX object CMakeFiles/LinuxProject1.dir/LinuxProject1.cpp.o
-  [ 50%] Linking CXX executable LinuxProject1
-  [100%] Built target LinuxProject1
