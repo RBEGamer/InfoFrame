@@ -1,0 +1,3 @@
+C:/Users/marcel/Desktop/InfoFrame/src/vs_project/info_frame/info_frame/Debug/CMakeFiles/info_frame.dir
+C:/Users/marcel/Desktop/InfoFrame/src/vs_project/info_frame/info_frame/Debug/CMakeFiles/edit_cache.dir
+C:/Users/marcel/Desktop/InfoFrame/src/vs_project/info_frame/info_frame/Debug/CMakeFiles/rebuild_cache.dir

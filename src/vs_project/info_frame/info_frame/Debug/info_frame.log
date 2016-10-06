@@ -1,0 +1,24 @@
+﻿  VisualGDB: Updated source file list in C:\Users\marcel\Desktop\InfoFrame\src\vs_project\info_frame\info_frame/CMakeLists.txt. Enable verbose mode for more details.
+  VisualGDB: Run "C:\Program Files\CMake\bin\cmake.exe -G "Unix Makefiles" -DCMAKE_BUILD_TYPE=DEBUG -DCMAKE_COLOR_MAKEFILE=OFF .. -DCMAKE_TOOLCHAIN_FILE=toolchain-Debug.cmake -DCMAKE_MAKE_PROGRAM="C:/SysGCC/raspberry/bin/make.exe"" in directory "C:\Users\marcel\Desktop\InfoFrame\src\vs_project\info_frame\info_frame/Debug" on local computer
+  -- The C compiler identification is GNU 4.9.2
+  -- The CXX compiler identification is GNU 4.9.2
+  -- Check for working C compiler: C:/SysGCC/raspberry/bin/arm-linux-gnueabihf-gcc.exe
+  -- Check for working C compiler: C:/SysGCC/raspberry/bin/arm-linux-gnueabihf-gcc.exe -- works
+  -- Detecting C compiler ABI info
+  -- Detecting C compiler ABI info - done
+  -- Detecting C compile features
+  -- Detecting C compile features - done
+  -- Check for working CXX compiler: C:/SysGCC/raspberry/bin/arm-linux-gnueabihf-g++.exe
+  -- Check for working CXX compiler: C:/SysGCC/raspberry/bin/arm-linux-gnueabihf-g++.exe -- works
+  -- Detecting CXX compiler ABI info
+  -- Detecting CXX compiler ABI info - done
+  -- Detecting CXX compile features
+  -- Detecting CXX compile features - done
+  -- Configuring done
+  -- Generating done
+  -- Build files have been written to: C:/Users/marcel/Desktop/InfoFrame/src/vs_project/info_frame/info_frame/Debug
+  VisualGDB: Run "cmd.exe /c "C:\SysGCC\raspberry\bin\make.exe"" in directory "C:\Users\marcel\Desktop\InfoFrame\src\vs_project\info_frame\info_frame/Debug" on local computer
+  Scanning dependencies of target info_frame
+  [ 50%] Building CXX object CMakeFiles/info_frame.dir/info_frame.cpp.o
+  [100%] Linking CXX executable info_frame
+  [100%] Built target info_frame
