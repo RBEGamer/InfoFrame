@@ -1,5 +1,7 @@
-# InfoFrame
-A 16x16 LED Matrix Frame
- InfoFrame is a 16 by 16 RGB LED Matrix with mostly 3D printed parts.
- Its unsign the WS2813 Leds with an RaspberryPi. 
+# Version-Compiler
+The Version-Compiler is a python script that checks at run a set git repo and at change it will
+with the help of cmake create a project depends of your OS and then it will compile (make, nmake) it.
+#Easy autoupdate of your program with the rpi!
+#SETUP
+Only change the variables to your git and storage paths
  
