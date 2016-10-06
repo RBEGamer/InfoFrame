@@ -4,4 +4,5 @@ with the help of cmake create a project depends of your OS and then it will comp
 #Easy autoupdate of your program with the rpi!
 #SETUP
 Only change the variables to your git and storage paths
- 
+#TEST
+The default configuration, clones this repo and compile the test project located at /src/vs_project/
