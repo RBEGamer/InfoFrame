@@ -1,3 +1,4 @@
+#VERISON CHECKER MARCEL OCHSENDORF C OCT 2016
 import os.path
 import httplib2
 from git import Repo
@@ -27,7 +28,7 @@ exec_additional_flags = ''#additional flags for executiong og the final compile 
 current_version = '-1'
 current_online_version = '-1'
 
-print "INFO FRAME VERSION CHECKER START"
+print "VERSION CHECKER START"
 
 
 #check if execute folder exists
