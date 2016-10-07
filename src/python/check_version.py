@@ -108,7 +108,7 @@ if not current_version == current_online_version:
             
         print 'EXECUTE FINAL RESULT'
         if execute_after_compile == 1:
-        1return_code = subprocess.call(executable_name + ' ' + exec_additional_flags, shell=True)
+        return_code = subprocess.call(executable_name + ' ' + exec_additional_flags, shell=True)
         
     except:
         print 'cant clone repo'
