@@ -9,8 +9,8 @@ with the help of cmake create a project depends of your OS and then it will comp
 * Save the script and add it to your autostart (`rc.local`) with sudo permission
 
 ### NOTE
-* The version.txt file in the root dir of the repo (url can be specified in the script) is important to check the version! This must exists!
-* The system builds your files with cmake, so our sourcecode must contain a valid `CMakeLists.txt
+* The `version.txt` file in the root dir of the repo (url can be specified in the script) is important to check the version! This must exists!
+* The system builds your files with cmake, so our sourcecode must contain a valid `CMakeLists.txt`
 
 # TEST
-The default configuration, clones this repo and compile the test project located at /src/vs_project/
+The default configuration, clones this repo and compile the test project located at `/src/vs_project/
