@@ -1,5 +1,9 @@
 # Version-Compiler
 ## Easy autoupdate of your program with the rpi!
+![Gopher image](https://travis-ci.org/RBEGamer/Version-Compiler.svg?branch=master)
+
+
+
 The Version-Compiler is a python script that checks at run a set git repo and at change it will
 with the help of cmake create a project depends of your OS and then it will compile (make, nmake) it.
 
