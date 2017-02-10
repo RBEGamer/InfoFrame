@@ -1,10 +1,11 @@
 #VERISON CHECKER MARCEL OCHSENDORF C OCT 2016
+import os
 import os.path
 import httplib2
 from git import Repo
+import subprocess
 from subprocess import call
 import shutil
-import subprocess
 import glob
 
 #PLEASE SETUP YOUR PATHS HERE
@@ -20,7 +21,7 @@ src_dir_to_build = src_dir_to_compile + 'build/' #dont touch it :) because cmake
 execute_after_compile = 1 #1/0 set this to 1 to run it after compile
 execute_if_no_update_required = 1 #1/0 set this to 1 to run it if no update requied
 #FLAGS (OPTIONAL, DEFAULT IS '')
-cmake_additional_flags = '-G "Unix Makefiles" -DCMAKE_BUILD_TYPE=RELEASE' #additional flags for the cmake call 
+cmake_additional_flags = '-G "Unix Makefiles" -DCMAKE_BUILD_TYPE=RELEASE' #additional flags for the cmake call
 make_additional_flags = ''#additional flags for the make call
 exec_additional_flags = ''#additional flags for executiong og the final compile result
 
@@ -35,7 +36,7 @@ print "VERSION CHECKER START"
 if not os.path.exists(executable_dir):
     os.mkdir(executable_dir)
     print 'create executable dir'
-#check if version file exists    
+#check if version file exists
 if not os.path.exists(version_file_path):
     current_version = '0'
     f = file(version_file_path, 'w+')
@@ -48,7 +49,7 @@ else:
     lines = file.readlines()
     current_version = lines[0]
     file.close()
-#read remote version file    
+#read remote version file
 try:
     resp, content = httplib2.Http().request(repo_version_file_path)
     #print content
@@ -56,7 +57,7 @@ try:
 except:
     print 'request failed please check internet connection or repo link'
     current_online_version = '-1'
-    
+
 #check if update required
 print current_version + '==' + current_online_version
 if not current_version == current_online_version:
@@ -87,11 +88,11 @@ if not current_version == current_online_version:
             print 'clean build dir'
             shutil.rmtree(src_dir_to_build)
         #RUN CMAKE
-        print 'run cmake'    
-        return_code = subprocess.call("cmake .. " + cmake_additional_flags, shell=True, cwd=src_dir_to_build)  
+        print 'run cmake'
+        return_code = subprocess.call("cmake .. " + cmake_additional_flags, shell=True, cwd=src_dir_to_build)
         #RUN COMPILE
         print 'run make'
-        return_code = subprocess.call("make " + make_additional_flags, shell=True, cwd=src_dir_to_build)  
+        return_code = subprocess.call("make " + make_additional_flags, shell=True, cwd=src_dir_to_build)
         #COPY FILE TO DEST
         print 'CLEANUP FINAL DIR'
         shutil.rmtree(executable_dir)
@@ -106,18 +107,18 @@ if not current_version == current_online_version:
             f.write(current_online_version)
             f.close()
             print 'create missing local version file ' + version_file_path
-            
+
         print 'EXECUTE FINAL RESULT'
         if execute_after_compile == 1:
-        return_code = subprocess.call(executable_name + ' ' + exec_additional_flags, shell=True)
-        
+          subprocess.call(executable_name +  exec_additional_flags, shell=True)
+
     except:
         print 'cant clone repo'
 else:
     print 'no update requied execute'
     if execute_if_no_update_required == 1:
          if os.path.exists(executable_name):
-            return_code = subprocess.call(executable_name + ' ' + exec_additional_flags, shell=True)
+             subprocess.call(executable_name + ' ' + exec_additional_flags, shell=True)
         else:
             print 'execute path not exists'
     #TODO RUN PRODUCT
